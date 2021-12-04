@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intelligence</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- all styling sheets 
+        this is for all the assets -->
+    <link rel="stylesheet" type="text/css" href="../assets/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome-free-5.6.3-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/sal-master/sal-master/dist/sal.css">
+    <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css>"
+
+    <!-- for the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    
+    <!-- for the media queries -->
+    <link rel="stylesheet" media='screen and (max-width: 950px)' href='style/medium.css'>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="style/small.css">
+</head>
+<body>
+    <!-- For the landing page -->
+    <div class="container">
+        <div class="landingPage">
+            <img src="../img/Developers/logo.png" alt="Intelligence Logo" class="logo">
+            <h1>Intellegence</h1>
+            <p>Create to make a Difference</p>
+            <img src="../img/Developers/personal_site.svg" class="landingPicture">
+        </div>
+    </div>
+
+    <!-- For the about page -->
+
+    <div class="container">
+        <div class="about">
+            <h1>About</h1>
+            <div class="aboutInfo">
+                <div class="aboutLeft">
+                    <img src="../img/Developers/team_page.svg">
+                </div>
+                <div class="InfoTeam">
+                    <p>Intelligence has the smartest and brilliantly skilled people that 
+                        can support enterprises to solve and improve their technical related problems and marketing strategies. Furthermore, 
+                        Intelligence works as a whole group similar to the int data type, which results into productivity and effective team work.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- For the info of the members -->
+    <div class="teamMembers">
+        <div class="container">
+            <h1>Meet the team</h1>
+            <div class="members slider">
+                <div class="mem1">
+                    <div class="picture picture1">
+                        <img src="../img/Developers/members/ariel.JPG">
+                    </div>
+                    <h2>Ariel Dizon</h2>
+                </div>
+                <div class="mem2">
+                    <div class="picture picture2">
+                        <img src="../img/Developers/members/bryan.JPG">
+                    </div>
+                    <h2>Bryan Inalves</h2>
+                </div>
+                <div class="mem3">
+                    <div class="picture picture3">
+                        <img src="../img/Developers/members/cardo.JPG">
+                    </div>
+                    <h2>Ricardo Millan</h2>
+                </div>
+                <div class="mem4">
+                    <div class="picture picture4">
+                        <img src="../img/Developers/members/caster.JPG">
+                    </div>
+                    <h2>Caster Manabat</h2>
+                </div>
+                <div class="mem5">
+                    <div class="picture picture5">
+                        <img src="../img/Developers/members/dabe.JPG">
+                    </div>
+                    <h2>Christian Dave</h2>
+                </div>
+                <div class="mem6">
+                    <div class="picture picture6">
+                        <img src="../img/Developers/members/dansy.JPG">
+                    </div>
+                    <h2>Dansy Robles</h2>
+                </div>
+                <div class="mem7">
+                    <div class="picture picture7">
+                        <img src="../img/Developers/members/ian.JPG">
+                    </div>
+                    <h2>Ian Marzelle</h2>
+                </div>
+                <div class="mem8">
+                    <div class="picture picture8">
+                        <img src="../img/Developers/members/julius.JPG">
+                    </div>
+                    <h2>Julius Valdez</h2>
+                </div>
+                <div class="mem9">
+                    <div class="picture picture9">
+                        <img src="../img/Developers/members/kaloy.JPG">
+                    </div>
+                    <h2>John Carlo</h2>
+                </div>
+                <div class="mem10">
+                        <div class="picture picture10">
+                            <img src="../img/Developers/members/kim.JPG">
+                        </div>
+                        <h2>Kim Nuguid</h2>
+                </div>
+                <div class="mem11">
+                        <div class="picture picture11">
+                            <img src="../img/Developers/members/macoy.JPG">
+                        </div>
+                        <h2>Mark Darius</h2>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+    <!-- For contact -->
+    <div class="container">
+        <div class="contact">
+            <h1>Contact</h1>
+            <div class="contactInfo">
+                <input type="text" name="name" placeholder="Name:">
+                <input type="email" name="email" placeholder="Email:">
+                <textarea rows="10" cols="34" placeholder="Message:" class="messageInput"></textarea>
+                <input type="submit" name="submit">
+            </div>
+        </div>
+    </div>
+
+    <!-- this is for the js scipts -->
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+            // this is for the slider to work
+            // when the window or the page is loaded
+
+            $(document).ready(function() {
+                $('.members').slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    responsive: [
+                        {
+                            breakpoint: 950,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                infinite: true
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                                infinite: true
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+
+    <!-- for the js plugins -->
+    <script type="text/javascript" src="../assets/jquery.smoothscroll.js"></script>
+    <script type="text/javascript" src="../assets/slick/slick.js"></script>
+    <script type="text/javascript" src="../assets/slick/slick.min.js"></script>
+    <script type ="text/javascript" src="../assets/sal-master/sal-master/dist/sal.js"></script>
+</body>
+</html>

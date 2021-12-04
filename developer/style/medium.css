@@ -1,0 +1,43 @@
+@media only screen and (max-width: 950px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+
+    .aboutInfo {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 3%;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .teamMembers {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 830px) {
+            
+        .container {
+            width: auto;
+        }
+
+        .landingPage {
+            margin-bottom: 100px;
+        }
+
+        .landingPicture {
+            display: none;
+        }
+}
+
+}

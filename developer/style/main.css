@@ -1,0 +1,262 @@
+ /* For the fonts */
+
+@font-face {
+    font-family: 'mitr';
+    src: url('Mitr-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global */
+
+body {
+    height: 100%;
+    font-size: 90%;
+    background-color: #F5F5F5;
+}
+
+h1 {
+    font-family: 'mitr';
+    font-size: 50px;
+    color: #2E2F31;
+}
+
+h2 {
+    font-family: 'mitr';
+    font-size: 25px;
+    color: #2E2F31;
+}
+
+p {
+    font-family: 'mitr';
+    font-size: 25px;
+    color: rgba(46, 47, 49, .8);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-family: 'mitr';
+    display: block;
+    width: 100%;
+    border: 1.5px solid #33AB77;
+}
+
+textarea {
+    font-family: 'mitr';
+    display: block;
+    width: 100%;
+    resize: none;
+    border: 1.5px solid #33AB77;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* For the landing page */
+
+.landingPage {
+    text-align: center;
+}
+
+.landingPage .landingPicture {
+    width: 800px;
+    margin: 80px 0 130px 0; 
+}
+
+.landingPage .logo {
+    width: 292px;
+    margin: 150px 0 59px 0;
+}
+
+/* for the about section */
+
+.about {
+    text-align: center;
+}
+
+.aboutInfo {
+    width: 100%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+.about p {
+    text-align: left;
+    font-size: 120%;
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+/* For the team members */
+
+.teamMembers {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #33AB77;
+    text-align: center;
+    height: 450px;
+    margin-top: 188px;
+    margin-bottom: 77px;
+}
+
+.teamMembers h1 {
+    padding-top: 69px;
+    padding-bottom: 20px
+}
+
+.teamMembers .members div {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.teamMembers .members div .picture {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #2E2F31;
+}
+
+.teamMembers .members div h2 {
+    text-align: center;
+}
+
+/* for the contact */
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactInfo {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.contactInfo , input[type="text"],
+.contactInfo , input[type="email"]{
+    height: 35px;
+    margin-bottom: 40px;
+}
+
+.contactInfo .messageInput {
+    margin-bottom: 50px;
+}
+
+.contactInfo input[type="submit"] {
+    background-color: #F5F5F5;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 70px;
+}
+
+/* footer */
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* for all pictures in the slider */
+
+/* .picture1 {
+    background-image: url('../../img/Developers/members/ariel.jpg');
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* .picture2 {
+    background-image: url('../../img/Developers/members/bryan.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture3 {
+    background-image: url('../../img/Developers/members/cardo.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture4 {
+    background-image: url('../../img/Developers/members/caster.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture5 {
+    background-image: url('../../img/Developers/members/dabe.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture6 {
+    background-image: url('../../img/Developers/members/dansy.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture7 {
+    background-image: url('../../img/Developers/members/ian.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture8 {
+    background-image: url('../../img/Developers/members/julius.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture9 {
+    background-image: url('../../img/Developers/members/kaloy.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture10 {
+    background-image: url('../../img/Developers/members/kim.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture11 {
+    background-image: url('../../img/Developers/members/macoy.jpg'); 
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+@media screen and (min-width: 1300px) {
+
+	.container {
+		max-width: 1200px;
+		font-size: 130%;
+	}
+
+}
+
+

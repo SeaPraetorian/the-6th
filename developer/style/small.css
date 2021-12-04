@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) { 
+    
+    .container {
+        width: auto;
+    }
+
+    .landingPage {
+        margin-bottom: 100px;
+    }
+
+    .landingPicture {
+        display: none;
+    }
+}
